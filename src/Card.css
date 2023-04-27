@@ -1,0 +1,43 @@
+.Second{
+    margin-top: 50px;
+    height: 100vh;
+    background-image: none;
+}
+
+.Card{
+    height: 300px;
+    margin: 0px 90px;
+    display: flex;
+    background-color: #02021b;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    padding-right: 70px;
+}
+
+.Card img{
+    height: 370px;
+    width: 480px;
+}
+
+.imgcon{
+    margin-left: 90px;
+}
+
+.Card p{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.Card h2{
+    color: white;
+}
+
+.two{
+    flex-direction: row-reverse;
+}
+
+.two .imgcon{
+    margin-left: -10px;
+}

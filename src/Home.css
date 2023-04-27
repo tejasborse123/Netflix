@@ -1,0 +1,87 @@
+.bgimg{
+    background-image: url(../src/images/bg.jpg);
+    height: 100vh;
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 90px;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+  
+.heading{
+    line-height: -0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
+
+select{
+    height: 30px;
+    width: 120px;
+    margin-right: 20px;
+    color: #fff;
+    background-color: rgba(4, 4, 4, 0.8);
+}
+
+.right{
+    justify-content: space-evenly;
+}
+
+.right button{
+    height: 30px;
+    width: 50px;
+    white-space: nowrap;
+    background-color: red;
+}
+
+.Content{
+    height: 380px;
+    width: 700px;
+    margin: 0px 90px;
+    padding: 20px 50px;
+}
+
+.Content p{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.Content .h2{
+    margin-top: -70px;
+}
+
+.Main{
+    height: 160px;
+    background-color: #02021b;
+    width: 70vw;
+    margin: 0px 5px;
+    margin-top: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red, purple ,blue) 1;
+    border-radius: 20px;
+    padding: 0px 30px;
+}
+
+.inputs{
+    display: flex;
+}
+
+input{
+    height: 50px;
+    width: 40%;
+}
+
+.inputs button{
+    height: 58px;
+    margin-left: 5px;
+    background-color: red;
+    width: 220px;
+    border-radius: 5px;
+    font-size: 26px;
+    color: white;
+}

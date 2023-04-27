@@ -1,0 +1,20 @@
+.third{
+    margin: 0px 90px;
+    margin-top: 1100px;
+}
+
+h1{
+    font-size: 42px;
+}
+
+.cheat{
+    height: 70px;
+    width: 80vw;
+    background-color: #fff;
+    display: flex;
+    background-color: #02021b;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 10px 0px;
+    padding: 20px;
+}
