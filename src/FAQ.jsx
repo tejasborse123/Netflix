@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import './FAQ.css';
+import FAQData from './FAQData';
 
-function FAQ(props) {
+function FAQ() {
 
-  const [selectedValue, setSelectedValue] = useState('');
-  
-  const handleChange = (event) => {
-      setSelectedValue(event.target.value);
-  }
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleDivClick = () => {
+    setIsVisible(!isVisible);
+  };
 
   return (
    <>
@@ -15,37 +16,39 @@ function FAQ(props) {
       <div className='third'>
         <h1>Frequently Asked Questions</h1>
 
-        <div className='cheat'>
-          <p>What is Netflix?</p>
-          <p>+</p>
-        </div>
+        {/* <div className='None Active'>
+          <p>
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+          </p>
+          <p>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+          </p>
+        </div> */}
 
-        <div className='cheat'>
-          <p>How Much does Netflix Cost?</p>
-          <p>+</p>
-        </div>
+          {FAQData.map((item,index) =>{
+                            return(
+                              <>
+                                    <a onClick={handleDivClick}>
+                                      <div className='cheat' key={index}>
+                                        <p>{item.question}</p>
+                                        <p><i class="fa-sharp fa-solid fa-plus"></i></p>
+                                      </div>
+                                    </a>
 
-        <div className='cheat'>
-          <p>Where can I Watch?</p>
-          <p>+</p>
-        </div>
+                                    {isVisible && 
+                                      <div className='Active None'>
+                                        <p>
+                                          {item.p1}
+                                        </p>
+                                        <p>
+                                          {item.p2}  
+                                        </p>
+                                      </div> 
+                                    } 
+                              </> );
+                             })}
 
-        <div className='cheat'>
-          <p>How do I cancel?</p>
-          <p>+</p>
-        </div>
-
-        <div className='cheat'>
-          <p>What can I watch on Netflix?</p>
-          <p>+</p>
-        </div>
-
-        <div className='cheat'>
-          <p>Is Netflix Good For Kids?</p>
-          <p>+</p>
-        </div>    
-
-
+        
         <form>
           <label><h2>Ready to watch? Enter your email to create or restart your membership.</h2></label>
           <div className='inputs'>

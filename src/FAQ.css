@@ -17,4 +17,14 @@ h1{
     font-size: 30px;
     margin: 10px 0px;
     padding: 20px;
+    cursor: pointer;
+}
+
+.Active{
+    padding: 0px 20px;
+    display: block;
+}
+
+.Active p{
+    font-size: 26px;
 }

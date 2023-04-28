@@ -12,8 +12,32 @@ function Card() {
    <>
 
       <div className='Second'>
+              {/* 
+                {
+                CardData.map((item,index) =>{
+                    return(
+                            <>
+                            <div className='Card' key={index}> 
+                            
+                                  <div>
+                                      <span>
+                                          <p>{item.head}</p>
+                                          <h2>{item.text}</h2>
+                                      </span>
+                                  </div>
 
-        <div className='Card'> 
+                                  <div className='imgcon'>
+                                    <img src={item.img}></img>
+                                  </div>
+
+                            </div><hr/>
+                            </>  );
+                                      
+                          })
+                }
+                 */}
+
+<div className='Card'> 
               <div>
                 <span>
                   <p>Enjoy on your TV.</p>
@@ -61,6 +85,7 @@ function Card() {
               </div>
         </div><hr/>
 
+        
       </div>
    </>
   );
